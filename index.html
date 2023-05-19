@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLife - Health & Fitness</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        FitLife<span class="span">.</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-toggle-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#course" class="navbar-link" data-nav-link>Nutrition</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./contact.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="btn btn-primary" id="signUpbtnHome" onclick="homeBtn()">Sign Up</button>
+
+      <button class="nav-toggle-btn" aria-label="open manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="hero" id="home" data-section
+        style="background-image: url('./images/heroo.jpg')">
+        <div class="container">
+
+          <p class="hero-subtitle">Health & Fitness</p>
+
+          <h1 class="h1 hero-title">The first Wealth <br> is Health</h1>
+
+          <a href="./findnow.html" class="btn btn-secondary">Find Now</a>
+
+          <div class="social-wrapper">
+
+            <p class="social-title">Connect with us:</p>
+
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-skype"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-label="service" data-section>
+        <div class="container">
+
+          <p class="hero-subtitle" id="nameHere" style="margin: 50px 0px;margin-top: 0px;"></p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./images/service-1.svg" width="60" height="60" loading="lazy" alt="Women’s Health">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Women’s Health</a>
+                </h3>
+
+                <p class="card-text">
+                  Women represent the cornerstone of a family's overall health
+                </p>
+
+                <a href="./women.html" class="btn btn-secondary">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card active">
+
+                <div class="card-icon">
+                  <img src="./images/service-2.svg" width="60" height="60" loading="lazy" alt="Mental Health">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Mental Health</a>
+                </h3>
+
+                <p class="card-text">
+                  Mental health is the overall wellness of how you think, regulate your feelings and behave.
+                </p>
+
+                <a href="./mentalh.html" class="btn btn-secondary">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./images/service-3.svg" width="60" height="60" loading="lazy" alt="Fitness">
+                </div>
+
+                <h3 class="h3">
+                  <a href="./fitness.html" class="card-title">Fitness</a>
+                </h3>
+
+                <p class="card-text">
+                  Regular physical activity is one of the most important things you can do for your health </p>
+
+                <a href="./fitness.html" class="btn btn-secondary">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" aria-label="about" id="about" data-section>
+        <div class="container">
+
+          <div class="about-banner img-holder" style="--width: 470; --height: 580;">
+            <img src="./images/about-banner.jpg" width="470" height="580" loading="lazy" alt="about banner"
+              class="img-cover">
+          </div>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">25+ Years Of Experience</p>
+
+            <h2 class="h2 section-title">We have expert instructors to help our students.</h2>
+
+            <p class="section-text">
+              Young, active and accomplished, one of Delhi’s most insightful nutritionist, columnist.
+              She holds a BS and MS in Dietetics from Michigan State University and believes in a sustainable, ‘no
+              deprivation’ approach to a meaningful, long-lasting lifestyle makeover.
+            </p>
+
+            <p class="section-text">
+              Going beyond fads & myths, they makes nutrition simple and straight. They constantly encourages their
+              clients and readers to develop a healthy relationship with food.
+              A nutritionist who believes good food and good health are best buddies. For them, nutrition is delicious &
+              doable..
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #Recipes
+      -->
+
+      <section class="section course" aria-label="course" id="course" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <p class="section-subtitle">100+ Recipes Available</p>
+
+            <h2 class="h2 section-title">How to make your meals fun?</h2>
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 350; --height: 300;">
+                  <img src="./images/recipe1.png" width="350" height="300" loading="lazy" alt="Blended Baked Oats"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <data class="card-price" value="98">1</data>
+
+                  <p class="card-author">
+                    <a href="#" class="card-link">
+                      By: <span class="span">Brittany Mullins</span>
+                    </a>
+                  </p>
+
+                  <h3 class="h3">
+                    <a href="./blendedbakedoats.html" class="card-title">Blended Baked Oats</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <time datetime="PT8H20M">35 mins</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <p class="card-meta-text">Serves 1</p>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 350; --height: 300;">
+                  <img src="./images/beet.jpg" width="350" height="300" loading="lazy"
+                    alt="Introduction to Food and Health." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <data class="card-price" value="72">2</data>
+
+                  <p class="card-author">
+                    <a href="#" class="card-link">
+                      By: <span class="span">Arlene Daniels</span>
+                    </a>
+                  </p>
+
+                  <h3 class="h3">
+                    <a href="./beetsalad.html" class="card-title">Beet Power Mason Jar Salad</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <time datetime="PT9H25M">20 mins</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <p class="card-meta-text">Serves 4</p>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 350; --height: 300;">
+                  <img src="./images/jiccama.jpg" width="350" height="300" loading="lazy"
+                    alt="Nutrition and Lifestyle in Pregnancy" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <data class="card-price" value="68">3</data>
+
+                  <p class="card-author">
+                    <a href="#" class="card-link">
+                      By: <span class="span">Selina Benton</span>
+                    </a>
+                  </p>
+
+                  <h3 class="h3">
+                    <a href="./jiccama.html" class="card-title">Golden Baked Jiccama Fries</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <time datetime="PT3H38M">01 hr 10 mins</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <p class="card-meta-text">Serves 4</p>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 350; --height: 300;">
+                  <img src="./images/cauli.jpg" width="350" height="300" loading="lazy"
+                    alt="Expertise on Fitness, Nutrition and Health" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <data class="card-price" value="98">4</data>
+
+                  <p class="card-author">
+                    <a href="#" class="card-link">
+                      By: <span class="span">Ryan Patterson</span>
+                    </a>
+                  </p>
+
+                  <h3 class="h3">
+                    <a href="./cauli.html" class="card-title">Cheesy Cauliflower Nachos</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <time datetime="PT2H16M">42 mins</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <p class="card-meta-text">Serves 6</p>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 350; --height: 300;">
+                  <img src="./images/granola.jpg" width="350" height="300" loading="lazy"
+                    alt="Hacking exercise for health new science of fitness" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <data class="card-price" value="72">5</data>
+
+                  <p class="card-author">
+                    <a href="#" class="card-link">
+                      By: <span class="span">Rose Nav</span>
+                    </a>
+                  </p>
+
+                  <h3 class="h3">
+                    <a href="./granola.html" class="card-title">Chocolate Chip Granola Bars</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <time datetime="PT6H12M">3 mins</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <p class="card-meta-text">Serves 10</p>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 350; --height: 300;">
+                  <img src="./images/guacomole.jpg" width="350" height="300" loading="lazy"
+                    alt="Designing Your Personal Weight Loss Plan" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <data class="card-price" value="68">6</data>
+
+                  <p class="card-author">
+                    <a href="#" class="card-link">
+                      By: <span class="span">Ariana Charles</span>
+                    </a>
+                  </p>
+
+                  <h3 class="h3">
+                    <a href="./guaco.html" class="card-title">Healthy Guacomole</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <time datetime="PT9H34M">15 mins</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <p class="card-meta-text">Serves 6-7</p>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" aria-label="blog" id="blog" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <p class="section-subtitle">Our Blog Post</p>
+
+            <h2 class="h2 section-title">Latest Article on Nutrition</h2>
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <div class="wrapper">
+
+                  <time class="publish-date" datetime="2022-02-24">
+                    <span class="span">7</span> June
+                  </time>
+
+                  <div>
+
+                    <div class="card-author">
+                      <a href="#" class="card-link">
+                        By: <span class="span">Liz Cook, MS, RD</span>
+                      </a>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">How Does A Nutrition Coach Help With Intuitive Eating?</a>
+                </h3>
+
+                <p class="card-text">
+                  Are you looking to eat more intuitively? Maybe you are already trying to implement some of the
+                  principles of intuitive eating,
+                  but looking for some guidance on how to make sure you are getting the most out of this framework.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="wrapper">
+
+                  <time class="publish-date" datetime="2022-02-24">
+                    <span class="span">22</span> Feb
+                  </time>
+
+                  <div>
+
+                    <div class="card-author">
+                      <a href="#" class="card-link">
+                        By: <span class="span">Radha Varsh</span>
+                      </a>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">How Does A Nutrition Coach Help With Plant-Based Eating?</a>
+                </h3>
+
+                <p class="card-text">
+                  Are you looking to transition to a plant-based diet?
+                  Maybe you are already following a vegetarian or vegan diet, but looking for some guidance on how to
+                  make sure you have the correct balance of nutrients.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="wrapper">
+
+                  <time class="publish-date" datetime="2022-02-24">
+                    <span class="span">4</span> Oct
+                  </time>
+
+                  <div>
+
+                    <div class="card-author">
+                      <a href="#" class="card-link">
+                        By: <span class="span">Vineeta Batra</span>
+                      </a>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Simple Hacks to Boost Eye Health</a>
+                </h3>
+
+                <p class="card-text">
+                  Taking care of your eye health is actually not as easy as you may always have thought.
+                  Even the simplest of things like eating foods for good eye health and adopting eye health tips in your
+                  current lifestyle can take you a long way.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section" data-section>
+      <div class="container">
+
+        <div class="footer-list">
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">All Courses</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Daily Exercise</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Find Your Balance</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Personal Program</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Natural Process</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Immune System</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Gives You Energy</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+              New Delhi, India
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:18001213637" class="footer-link">1800-051-3489</a>
+
+              <a href="tel:+915552348765" class="footer-link">+91 345 704-683</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@fitlife.com" class="footer-link">info@fitlife.com</a>
+
+              <a href="mailto:services@fitlife.com" class="footer-link">services@fitlife.com</a>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Opening Hours</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Mon-Fri: 9 AM – 6 PM</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Saturday: 9 AM – 4 PM</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sunday: Closed</a>
+          </li>
+
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 FitLife
+          <a href="#" class="copyright-link"></a>
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li class="footer-bottom-item">
+            <a href="./terms.html" class="footer-bottom-link">Terms of Service</a>
+          </li>
+
+          <li class="footer-bottom-item">
+            <a href="./privacy.html" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./script.js" defer></script>
+  <script>
+
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    if (user) {
+      document.getElementById("signUpbtnHome").innerText = "log Out";
+      document.getElementById("nameHere").innerText = `Welcome back, ${user}!`;
+    }
+
+    function homeBtn() {
+      if (document.getElementById("signUpbtnHome").innerText == "log Out") {
+        if (user) {
+          localStorage.removeItem("user");
+          document.getElementById("signUpbtnHome").innerText = "Sign Up";
+          document.getElementById("nameHere").innerText="";
+        }
+        return
+      }
+      else {
+        location.href = "./signup.html"
+      }
+    }
+
+  </script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
